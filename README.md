@@ -1,24 +1,25 @@
 # advanced-testing-techniques
+
 This is a repo for doing advanced testing in Python
 
 ## Setup Project
 
 1. Create and source virtualenv
 
-'''bash
+```bash
 virtualenv ~/.advanced-testing
 source ~/.advanced-testing/bin/activate
-'''
+```
 
 2. Create structure
 
-'''bash
+```bash
 touch Makefile && touch test_hello.py && touch hello.py && touch requirements.txt
-'''
+```
 
 3. Populate Makefile
 
-'''bash
+```bash
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
@@ -30,7 +31,7 @@ lint:
 	pylint --disable=R,C hello.py hellocli.py
 
 all: install lint test
-'''
+```
 
 ## How to debug
 
